@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>soporteNuevo</title>
+
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-aria.js"></script>
+  <script src="../bower_components/angular-material/angular-material.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/datosController.js"></script>
+  <!-- endbuild -->
+
+</head>
+
+<body>
+
+  <div id="soporteNuevo" class="hidden">
+
+    <header class="geotabPageHeader">
+      <h1 class="geotabPageName">Soporte tecnico <span class="subdued">chat</span></h1>
+      <div class="pageNameSecondary">
+        <h3 class="geotabSecondaryTitle"><span id="soporteNuevo-user"></span></h3>
+      </div>
+    </header>
+    <div ng-controller="accesoDatosController">
+      <script>
+        window.fcSettings = {
+          token: "7ac230c4-a2ac-441d-88e1-d028062c65f2",
+          host: "https://wchat.freshchat.com"
+        };
+      </script>
+      <script src="https://wchat.freshchat.com/js/widget.js" async></script>
+    </div>
+    <br>
+    <div ng-cloak>
+      <div layout="row" layout-wrap>
+        <div flex="55">
+          <div flex-offset="15">
+            <img src="img/newlogo-01.png" width="200">
+          </div>
+
+          <br><br>
+          <div layout="row">
+            <div flex="40">
+              Distribuidor:
+            </div>
+            <div flex="50">
+              Metricamovil
+            </div>
+          </div><br>
+          <div layout="row">
+            <div flex="40">
+              Correo electronico:
+            </div>
+            <div flex="50">
+              sporte@metricamovil.com
+            </div>
+          </div><br>
+          <span class="md-subtitle" style="color:#0c3d7c">Horarios de atención</span><br><br>
+          <div layout="row">
+            <div flex="40">
+              Lunes a Viernes
+            </div>
+            <div flex="50">
+              8:00 am - 7:00 pm
+            </div>
+          </div>
+          <div layout="row">
+            <div flex="40">
+              Sabados
+            </div>
+            <div flex="50">
+              9:00 am - 1:00 pm
+            </div>
+          </div>
+        </div>
+
+        <br>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+  <footer>
+    <md-toolbar class="md-scroll-shrink">
+      <div layout="row" layout-align="center center" flex>
+        <center> <span class="md-caption">MÉTRICA MÓVIL SA de CV 2018 © Todos los derechos reservados.</span></center>
+      </div>
+    </md-toolbar>
+  </footer>
+</body>
+
+</html>

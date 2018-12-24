@@ -1,0 +1,21 @@
+{
+  "name": "soporteNuevo",
+  "supportEmail": "",
+  "version": "0.0.1",
+  "items": [{
+    
+    "url": "soporteNuevo.html",
+    "path": "",
+    "menuName": {
+      "en": "soporteNuevo"
+    },
+    
+    "icon": "images/icon.svg"
+  }],
+  "dev": {
+    "root": "soporteNuevo",
+    "dist": {
+      "host": "https://www.example.com/myaddin/"
+    }
+  }
+}
